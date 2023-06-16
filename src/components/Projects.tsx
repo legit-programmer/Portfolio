@@ -1,6 +1,7 @@
-import ProjectCard from "./ProjectCard";
+
 
 const Projects = () => {
+    
     return (
         <div className="projects font-modern mx-[15%] flex justify-center" id="projects">
             <div>
@@ -10,9 +11,7 @@ const Projects = () => {
                 >
                     Projects
                 </h1>
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
+                
             </div>
         </div>
     );
