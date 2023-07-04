@@ -1,6 +1,17 @@
 import ProjectCard from "./ProjectCard";
 
-const Projects = () => {
+interface props {
+    projects:any;
+}
+
+const Projects = ({projects}:props) => {
+    const projectArray = ()=>{
+        let arr:any = [];
+        for(let i=0;i<projects.length;i++){
+            arr = [projects[i]['fields'], ...arr]
+        }
+        return arr;
+    }
     return (
         <>
             <div
@@ -16,6 +27,12 @@ const Projects = () => {
                     </h1>
                 </div>
             </div>
+            {
+                projectArray().map((i:any)=>{
+                    
+                return <ProjectCard key={i['url']} title={i['title']} url={i['url']} desc={i['description']}/>    
+                })
+            }
         </>
     );
 };

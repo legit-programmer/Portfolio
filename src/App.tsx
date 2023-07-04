@@ -7,18 +7,18 @@ import axios from "axios"
 import {useEffect, useState} from "react"
 
 function App() {
-  const [status, setStatus] = useState(false);
+  
     useEffect(()=>{
-      axios.get('http://127.0.0.1:8000/get/').then((res)=> {setProjects(res.data);setStatus(true)}).catch((err)=>console.log(err));
-    }, [status])
+      axios.get('http://notlegit991.pythonanywhere.com/projects/get/').then((res)=> {setProjects(res.data);}).catch((err)=>console.log(err));
+    }, [])
     
-    const [projects, setProjects] = useState(Object);
+    const [projects, setProjects] = useState([]);
     console.log(projects);
     return (
         <>
             <Home />
             <About />
-            <Projects />
+            <Projects projects={projects}/>
             <Contact />
         </>
     );
