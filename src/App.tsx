@@ -9,7 +9,7 @@ import {useEffect, useState} from "react"
 function App() {
   
     useEffect(()=>{
-      axios.get('http://notlegit991.pythonanywhere.com/projects/get/').then((res)=> {setProjects(res.data);}).catch((err)=>console.log(err));
+      axios.get('https://notlegit991.pythonanywhere.com/projects/get/').then((res)=> {setProjects(res.data);}).catch((err)=>console.log(err));
     }, [])
     
     const [projects, setProjects] = useState([]);
