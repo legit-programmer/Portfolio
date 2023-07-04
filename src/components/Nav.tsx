@@ -5,17 +5,17 @@ export const Nav = () => {
             className=" flex items-center font-modern  text-white text-xl font-light w-full"
         >
             <div className=" w-[50%] ">
-                <ul className=" flex my-4 ">
-                    <li className=" mx-4 hover:text-pink-200">
+                <ul className=" flex my-4">
+                    <li className="transition-all mx-4 hover:text-white hover:text-2xl">
                         <a href="#nav">Home</a>
                     </li>
-                    <li className=" mx-4 hover:text-pink-200">
+                    <li className=" transition-all mx-4 hover:text-white hover:text-2xl">
                         <a href="#about">About</a>
                     </li>
-                    <li className=" mx-4 hover:text-pink-200">
+                    <li className=" transition-all mx-4 hover:text-white hover:text-2xl">
                         <a href="#projects">Projects</a>
                     </li>
-                    <li className=" mx-4 hover:text-pink-200">
+                    <li className=" transition-all mx-4 hover:text-white hover:text-2xl">
                         <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfnbWlmrszXtNWvSVmvPmztZJRTMtxHGhCrLCwSfQKFDDDbBCQjjQRpgzJGmZTfccjPRgB">Contact</a>
                     </li>
                 </ul>

@@ -2,36 +2,24 @@ const Contact = () => {
     return (
         <>
             <h1></h1>
-            <div className="w-full flex">
-                <div className="">
-                    <div className="mb-3 ">
-                        <label
-                            htmlFor="exampleFormControlInput1"
-                            className="form-label"
-                        >
-                            Email address
-                        </label>
-                        <input
-                            type="email"
-                            className="form-control"
-                            id="exampleFormControlInput1"
-                            placeholder="name@example.com"
-                        />
-                    </div>
-                    <div className="mb-3">
-                        <label
-                            htmlFor="exampleFormControlTextarea1"
-                            className="form-label"
-                        >
-                            Message
-                        </label>
-                        <textarea
-                            className="form-control"
-                            id="exampleFormControlTextarea1"
-                            rows={3}
-                        ></textarea>
-                    </div>
-                </div>
+            <div className="w-full flex justify-center my-14">
+                <h2 className="text-white text-2xl font-modern">
+                    Email -{" "}
+                    <a
+                        className="underline transition-all hover:text-gray-300"
+                        href="mailto:siddiquekhan1845@gmail.com"
+                    >
+                        siddiquekhan1845@gmail.com
+                    </a>{" "}
+                    or DM me on{" "}
+                    <a
+                        className="underline transition-all hover:text-gray-300"
+                        href="https://twitter.com/legit-programmer/"
+                    >
+                        Twitter
+                    </a>
+                    🚀
+                </h2>
             </div>
         </>
     );

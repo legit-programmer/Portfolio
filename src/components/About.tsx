@@ -3,14 +3,14 @@
 const About = () => {
     return (
         <div className=" mx-[15%] my-[15%]" id="about">
-            <div className="about bg-white text-white  font-modern font-light p-10 rounded-lg bg-opacity-25 drop-shadow-xl">
+            <div className="about bg-white text-white  font-modern font-light p-10 rounded-lg bg-opacity-5 drop-shadow-xl">
                 <h2
                     className=" text-3xl font-semibold text-transparent bg-clip-text
                                         bg-gradient-to-r from-[#85d0ae] to-[#807c7c]"
                 >
                     About Me
                 </h2>
-                <p>
+                <p className=" my-4 text-xl">
                     I'm an 18-year-old programmer with a passion for exploring
                     new technologies and experimenting with code👨‍💻.My love for
                     programming started at a young age, and I've been hooked
