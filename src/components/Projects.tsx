@@ -2,9 +2,10 @@ import ProjectCard from "./ProjectCard";
 
 interface props {
     projects:any;
+    loading:boolean;
 }
 
-const Projects = ({projects}:props) => {
+const Projects = ({projects, loading}:props) => {
     const projectArray = ()=>{
         let arr:any = [];
         for(let i=0;i<projects.length;i++){
@@ -27,6 +28,9 @@ const Projects = ({projects}:props) => {
                     </h1>
                 </div>
             </div>
+            {loading&&<div className="flex items-center w-full justify-center my-10">
+                <h1 className="text-white animate-pulse text-2xl font-modern">Loading...</h1>
+            </div>}
             {
                 projectArray().map((i:any)=>{
                     

@@ -7,9 +7,10 @@ import axios from "axios"
 import {useEffect, useState} from "react"
 
 function App() {
-  
+    const [loading, setLoading] = useState(true);
     useEffect(()=>{
-      axios.get('https://notlegit991.pythonanywhere.com/projects/get/').then((res)=> {setProjects(res.data);}).catch((err)=>console.log(err));
+        setLoading(true)
+      axios.get('https://notlegit991.pythonanywhere.com/projects/get/').then((res)=> {setProjects(res.data);setLoading(false);}).catch((err)=>console.log(err));
     }, [])
     
     const [projects, setProjects] = useState([]);
@@ -18,7 +19,7 @@ function App() {
         <>
             <Home />
             <About />
-            <Projects projects={projects}/>
+            <Projects projects={projects} loading={loading}/>
             <Contact />
         </>
     );
