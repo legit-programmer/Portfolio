@@ -14,9 +14,9 @@ const Contact = () => {
                     or DM me on{" "}
                     <a
                         className="underline transition-all hover:text-gray-300"
-                        href="https://twitter.com/legit-programmer/"
+                        href="https://instagram.com/siddiqueig_"
                     >
-                        Twitter
+                        Instagram
                     </a>
                     🚀
                 </h2>
