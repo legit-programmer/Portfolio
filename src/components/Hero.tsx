@@ -10,7 +10,7 @@ const Hero = () => {
                             className=" font-extrabold text-transparent bg-clip-text
                             bg-gradient-to-r from-[#73ff9f] to-[#4ab8c4] animate-pulse"
                         >
-                            Siddique
+                            Siddique.
                         </span>
                     </h1>
                     <p className=" text-2xl">
