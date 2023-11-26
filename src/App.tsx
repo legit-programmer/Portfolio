@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import axios from "axios"
 import {useEffect, useState} from "react"
 
+
 function App() {
     const [loading, setLoading] = useState(true);
     useEffect(()=>{
@@ -17,6 +18,7 @@ function App() {
     console.log(projects);
     return (
         <>
+            
             <Home />
             <About />
             <Projects projects={projects} loading={loading}/>

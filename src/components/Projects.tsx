@@ -21,8 +21,7 @@ const Projects = ({projects, loading}:props) => {
             >
                 <div>
                     <h1
-                        className=" text-5xl font-extrabold text-transparent bg-clip-text
-                                            bg-gradient-to-r from-[#a2ff73] to-[#cebe13] text-center"
+                        className=" text-5xl font-extrabold text-[#235332]"
                     >
                         Projects
                     </h1>
